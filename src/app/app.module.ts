@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // Material
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
 
 // Components
 import { HomeComponent } from './components/home/home.component';
@@ -22,6 +23,7 @@ import { HomeComponent } from './components/home/home.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
