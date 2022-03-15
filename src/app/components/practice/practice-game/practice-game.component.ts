@@ -25,7 +25,7 @@ export class PracticeGameComponent implements OnInit {
   public submitForm(): void {
     if (this.practiceController !== null 
       && !this.practiceController.finished()
-      && this.practiceController.test(this.form.controls['data'].value)) 
+      && this.practiceController.test(this.form.controls[DATA_KEY].value)) 
     {
       this.form.controls[DATA_KEY].patchValue(null);
     }
