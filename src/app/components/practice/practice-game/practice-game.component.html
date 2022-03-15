@@ -1,0 +1,8 @@
+<p>{{practiceController?.getCurrentHint()}}</p>
+
+<form [formGroup]="form" (ngSubmit)="submitForm()">
+    <mat-form-field appearance="fill">
+        <mat-label>...</mat-label>
+        <input type="text" formControlName="data" autocomplete="off" matInput>
+    </mat-form-field>
+</form>

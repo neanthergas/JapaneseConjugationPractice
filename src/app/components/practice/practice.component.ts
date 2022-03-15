@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TestPracticeController } from 'src/app/conjugation/test-practice-controller';
 
 @Component({
   selector: 'app-practice',
@@ -6,8 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./practice.component.scss']
 })
 export class PracticeComponent implements OnInit {
-
-  constructor() { }
+  public practiceController: TestPracticeController;
+  constructor() { 
+    this.practiceController = new TestPracticeController();
+  }
 
   ngOnInit(): void {
   }
